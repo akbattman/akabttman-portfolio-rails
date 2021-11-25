@@ -20,29 +20,31 @@ body {
 
 .yieldContent {
   overflow: auto;
-  height: 76vh;
+  height: 75vh;
   width: auto;
+  padding: 16px;
+  margin: .5vh .5vw;
+  &::-webkit-scrollbar {
+      width: 4px;
+  }
+  &::-webkit-scrollbar-button {
+  display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: aliceblue
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background: aliceblue;
+  }
+  &::-webkit-scrollbar-track {
+    background: #505050;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
-// .yieldContent::-webkit-scrollbar {
-//   width: 22px;
-// }
-// // .yieldContent::-webkit-scrollbar-button {
-// // display: none;
-// // }
-// .yieldContent::-webkit-scrollbar-thumb {
-//   background: #808080;
-//   border-radius: 50px;
-// }
-// .yieldContent::-webkit-scrollbar-thumb:hover {
-//   background: red;
-// }
-// .yieldContent::-webkit-scrollbar-thumb:active {
-//   background: red;
-// }
-// .yieldContent::-webkit-scrollbar-track {
-//   background: #505050;
-//   border-radius: 50px;
-// }
-// .yieldContent::-webkit-scrollbar-corner {
-//   background: transparent;
-// }

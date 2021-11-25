@@ -10,12 +10,16 @@ application up and running. -->
 * Ruby version
     ruby 2.7.3p183 (2021-04-05 revision 6847ee089d) [x86_64-linux]
 
-<!-- * System dependencies -->
+* System dependencies
+    bootstrap 4+
+
 
 <!-- * Configuration -->
 
+
 * Database creation & initialization
     active-storage--skipped
+
 
 <!-- * How to run the test suite -->
 
@@ -24,5 +28,3 @@ application up and running. -->
 <!-- * Deployment instructions -->
 
 <!-- * ... -->
-
-  
