@@ -11,3 +11,38 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background: black;
+  color: aliceblue;
+  margin: 0;
+}
+
+.yieldContent {
+  overflow: auto;
+  height: 76vh;
+  width: auto;
+}
+// .yieldContent::-webkit-scrollbar {
+//   width: 22px;
+// }
+// // .yieldContent::-webkit-scrollbar-button {
+// // display: none;
+// // }
+// .yieldContent::-webkit-scrollbar-thumb {
+//   background: #808080;
+//   border-radius: 50px;
+// }
+// .yieldContent::-webkit-scrollbar-thumb:hover {
+//   background: red;
+// }
+// .yieldContent::-webkit-scrollbar-thumb:active {
+//   background: red;
+// }
+// .yieldContent::-webkit-scrollbar-track {
+//   background: #505050;
+//   border-radius: 50px;
+// }
+// .yieldContent::-webkit-scrollbar-corner {
+//   background: transparent;
+// }

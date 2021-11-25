@@ -1,11 +1,11 @@
-#head {
+#foot {
   height: 12vh;
   width: auto;
   display: flex;
   align-items:center;
   justify-content: space-between;
   position: sticky;
-  top: 0;
+  bottom: 0;
   z-index: 1;
   background: black;
   padding: 24px;
@@ -13,6 +13,7 @@
   border-radius: 8px;
 }
 
-#vwMdBtns {
-  flex-direction: column;
+#contacts a {
+  color: aliceblue;
+  text-decoration: none;
 }
