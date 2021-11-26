@@ -12,6 +12,12 @@
   border: 1px solid aliceblue;
   border-radius: 8px;
 }
+#titleAnim h1{
+  max-width: 75%;
+  margin: 0;
+  font-size: 32px;
+  flex-grow: 1;
+}
 
 #vwMdBtns {
   flex-direction: column;

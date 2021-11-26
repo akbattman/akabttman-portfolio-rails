@@ -8,11 +8,22 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
 
-// => External / My additions
-import 'bootstrap'
-
-// => Internal / My additions
-require("./typed")
-
 Rails.start()
 Turbolinks.start()
+
+// ### | Don't edit above | ### //
+
+// => External / My Node additions
+import "bootstrap"
+// require: "typed"
+
+
+// => Internal / My additions
+import { typeAnim } from "./typedAnim";
+
+
+// => Listeners
+document.addEventListener('turbolinks:load', () => {
+  // Call your functions here, e.g:
+  typeAnim();
+});
