@@ -1,24 +1,37 @@
 #head {
-  height: 12vh;
+  height: 8vh;
   width: auto;
+  padding: 16px;
+  //   border: 1px solid aliceblue;
+  //   border-radius: 8px;
   display: flex;
   align-items:center;
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1;
-  background: black;
-  padding: 24px;
-  border: 1px solid aliceblue;
-  border-radius: 8px;
-}
-#titleAnim h1{
-  max-width: 75%;
-  margin: 0;
-  font-size: 32px;
-  flex-grow: 1;
 }
 
-#vwMdBtns {
-  flex-direction: column;
+#linksAB {
+  a {
+    color: inherit;
+  }
 }
+
+// #titleAnim {
+//   width: 100%;
+//   margin: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   h1, h2 {
+//     height: 5%;
+//     width: 100%;
+//     text-align: center;
+//   }
+// }
+
+// #vwMdBtns {
+//   flex-direction: column;
+// }

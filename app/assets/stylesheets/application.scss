@@ -13,38 +13,40 @@
 @import "pages/index";
 
 body {
-  background: black;
-  color: aliceblue;
   margin: 0;
+  color: aliceblue;
+  background: rgb(0,0,0);
+  background: linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(0,0,21,1) 36%, rgba(0,0,48,1) 100%);
 }
 
 .yieldContent {
-  overflow: auto;
-  height: 75vh;
-  width: auto;
-  padding: 16px;
-  margin: .5vh .5vw;
-  &::-webkit-scrollbar {
-      width: 4px;
-  }
-  &::-webkit-scrollbar-button {
-  display: none;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: #808080;
-    border-radius: 50px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: aliceblue
-  }
-  &::-webkit-scrollbar-thumb:active {
-    background: aliceblue;
-  }
-  &::-webkit-scrollbar-track {
-    background: #505050;
-    border-radius: 50px;
-  }
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
+  // height: 100vh;
+  // width: auto;
+  // display: flex;
+  // padding: 16px;
+  // margin: .5vh .5vw;
+  // overflow: auto;
+  // &::-webkit-scrollbar {
+  //     width: 4px;
+  // }
+  // &::-webkit-scrollbar-button {
+  // display: none;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: #808080;
+  //   border-radius: 50px;
+  // }
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background: aliceblue
+  // }
+  // &::-webkit-scrollbar-thumb:active {
+  //   background: aliceblue;
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: #505050;
+  //   border-radius: 50px;
+  // }
+  // &::-webkit-scrollbar-corner {
+  //   background: transparent;
+  // }
 }
