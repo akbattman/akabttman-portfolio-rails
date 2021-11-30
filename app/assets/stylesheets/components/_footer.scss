@@ -1,19 +1,71 @@
 #foot {
-  height: 12vh;
-  width: auto;
+  height: 16vh;
+  width: 100vw;
   display: flex;
-  align-items:center;
-  justify-content: space-between;
-  position: sticky;
+  align-items:flex-end;
+  overflow: hidden;
+  justify-content: center;
+  position: absolute;
   bottom: 0;
-  z-index: 1;
-  background: black;
-  padding: 24px;
-  border: 1px solid aliceblue;
-  border-radius: 8px;
+  // z-index: 1;
+  // background: black;
+  // padding: 24px;
+  // border: 1px solid aliceblue;
+  // border-radius: 8px;
 }
 
-#contacts a {
-  color: aliceblue;
-  text-decoration: none;
+.buildings {
+  background: black;
+  // border: 1px solid red;
+  // height: 10vh;
+  // width: 10vw;
+  &.bld1 {
+    height: 6vh;
+    width: 14vw;
+    margin-right: 1vw;
+  }
+  &.bld2 {
+    height: 16vh;
+    width: 10vw;
+  }
+  &.bld3 {
+    height: 8vh;
+    width: 11vw;
+    margin-right: 1vw;
+  }
+  &.bld4 {
+    height: 10vh;
+    width: 10vw;
+  }
+  &.bld5 {
+    height: 11vh;
+    width: 16vw;
+    margin-right: 1vw;
+  }
+  &.bld6 {
+    height: 5vh;
+    width: 10vw;
+    margin-right: 1vw;
+  }
+  &.bld7 {
+    height: 14vh;
+    width: 13vw;
+  }
+  &.bld8 {
+    height: 6vh;
+    width: 13vw;
+  }
+}
+
+.navi {
+  background: black;
+  width: 100vw;
+  height: 3vh;
+  display: flex;
+  position: absolute;
+  align-items: end;
+  justify-content: space-evenly;
+  h6:hover {
+    font-weight: bolder;
+  }
 }

@@ -42,10 +42,14 @@ align-items: center;
   width: auto;
   position: relative;
   bottom: 20%;
+  font-family: $typewriter;
+  color: rgb(120, 120, 120);
   h1 {
     font-size: MIN(8vw, 56px); // force CSS min compile.
+    font-family: $typewriter;
   }
   h2 {
     font-size: MIN(5vw, 40px);
+    font-family: $typewriter;
   }
 }

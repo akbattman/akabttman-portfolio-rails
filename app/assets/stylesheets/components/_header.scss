@@ -10,11 +10,20 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  h6:hover {
+    font-weight: bolder;
+  }
 }
 
 #linksAB {
+  width: 160px;
+  display: flex;
+  justify-content: space-evenly;
   a {
     color: inherit;
+    &:hover {
+      font-weight: bolder;
+    }
   }
 }
 
