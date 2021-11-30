@@ -1,5 +1,5 @@
 #foot {
-  height: 16vh;
+  height: 20vh;
   width: 100vw;
   display: flex;
   align-items:flex-end;
@@ -12,39 +12,39 @@
 .buildings {
   background: black;
   &.bld1 {
-    height: 6vh;
+    height: 7vh;
     width: 14vw;
     margin-right: 1vw;
   }
   &.bld2 {
-    height: 16vh;
+    height: 19vh;
     width: 10vw;
   }
   &.bld3 {
-    height: 8vh;
+    height: 9vh;
     width: 11vw;
     margin-right: 1vw;
   }
   &.bld4 {
-    height: 10vh;
+    height: 13vh;
     width: 10vw;
   }
   &.bld5 {
-    height: 11vh;
+    height: 16vh;
     width: 16vw;
     margin-right: 1vw;
   }
   &.bld6 {
-    height: 5vh;
+    height: 8vh;
     width: 10vw;
     margin-right: 1vw;
   }
   &.bld7 {
-    height: 14vh;
+    height: 12vh;
     width: 13vw;
   }
   &.bld8 {
-    height: 6vh;
+    height: 9vh;
     width: 13vw;
   }
 }
@@ -52,7 +52,7 @@
 .navi {
   background: black;
   width: 100vw;
-  height: 3vh;
+  height: 5vh;
   display: flex;
   position: absolute;
   align-items: end;

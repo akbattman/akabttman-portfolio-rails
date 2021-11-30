@@ -3,12 +3,12 @@ import Typed from 'typed.js';
 const typeAnim = () => {
   var options = {
     strings: [  
-      "&ensp;=>&ensp; Fullstacker &ensp;{ <br><br> &emsp;//&ensp; Web App Developer <br> &ensp;&emsp;&amp;&amp;&ensp; Software Engineer. <br><br> &emsp;#&ensp; Available to interview <br> &emsp;&ensp;||&ensp; Contact Me &ensp; :D &nbsp; <br> &ensp;}; <br> &ensp;"
+      "&ensp;=>&ensp; Fullstacker &ensp;{ <br><br> &emsp;//&ensp; Web App Developer <br> &ensp;&emsp;&amp;&amp;&ensp; Software Engineer. <br><br> &emsp;#&ensp; Available to interview <br> &emsp;&ensp;||&ensp; Contact Me &ensp; :D &nbsp; <br> &ensp;};"
     ],
-    typeSpeed: 80,
+    typeSpeed: 50,
     // loop: true,
     // loopCount: Infinity,
-    showCursor: true,
+    showCursor: false,
   };
   new Typed('#typed', options);
 }
