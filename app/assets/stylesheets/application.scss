@@ -34,29 +34,5 @@ body {
   display: flex;
   overflow: hidden;
   align-items: center;
-  
-  // overflow: auto;
-  // &::-webkit-scrollbar {
-  //     width: 4px;
-  // }
-  // &::-webkit-scrollbar-button {
-  // display: none;
-  // }
-  // &::-webkit-scrollbar-thumb {
-  //   background: #808080;
-  //   border-radius: 50px;
-  // }
-  // &::-webkit-scrollbar-thumb:hover {
-  //   background: aliceblue
-  // }
-  // &::-webkit-scrollbar-thumb:active {
-  //   background: aliceblue;
-  // }
-  // &::-webkit-scrollbar-track {
-  //   background: #505050;
-  //   border-radius: 50px;
-  // }
-  // &::-webkit-scrollbar-corner {
-  //   background: transparent;
-  // }
+  justify-content: center;
 }

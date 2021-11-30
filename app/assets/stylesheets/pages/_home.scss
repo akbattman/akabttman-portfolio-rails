@@ -1,55 +1,39 @@
 // Specific CSS for your home-page
-.wrap {
-// width: auto;
-// height: 92vh;
-// padding: 16px;
-// display: flex;
-// // flex-direction: column;
-// overflow: hidden;
-// align-items: center;
-}
-
-// .art {
-//   background: red;
-//   border: 1px solid yellow;
-//   height: 300px;
-//   width: 300px;
-// }
-
-#moon {
-  width: 32vw;
-  height: 32vw; // vw used to keep dimesions sq. with port dimensions
-  max-width: 200px;
-  max-height: 200px;
-  background: aliceblue;
-  border-radius: 100%;
-
-  box-shadow:
-    0 0 0 1vw rgba(177, 210, 239, 0.3),
-    0 0 0 2vw rgba(107, 147, 183, 0.2),
-    0 0 0 3.5vw rgba(71, 111, 147, 0.2),
-    0 0 0 5.5vw rgba(59, 93, 122, 0.2),
-    0 0 0 8vw rgba(36, 56, 73, 0.1),
-    0 0 0 12vw rgba(12, 19, 24, 0.1);
-
-  position: absolute;
-  bottom: 10vw;
-  right: 5vw;
-}
 
 .title {
   height: 25vh;
   width: auto;
-  position: relative;
-  bottom: 20%;
-  font-family: $typewriter;
+  position: absolute;
+  top: 16vh;
+  left: 32px;
   color: rgb(120, 120, 120);
   h1 {
-    font-size: MIN(8vw, 56px); // force CSS min compile.
+    font-size: MIN(8vw, 40px); // force CSS3 compile.
     font-family: $typewriter;
   }
   h2 {
-    font-size: MIN(5vw, 40px);
+    font-size: MIN(5vw, 32px);
     font-family: $typewriter;
   }
 }
+
+// #moon {
+//   width: 32vw;
+//   height: 32vw; // vw used to keep dimesions sq. with port dimensions
+//   max-width: 200px;
+//   max-height: 200px;
+//   background: aliceblue;
+//   border-radius: 100%;
+
+//   box-shadow:
+//     0 0 0 1vw rgba(177, 210, 239, 0.3),
+//     0 0 0 2vw rgba(107, 147, 183, 0.2),
+//     0 0 0 3.5vw rgba(71, 111, 147, 0.2),
+//     0 0 0 5.5vw rgba(59, 93, 122, 0.2),
+//     0 0 0 8vw rgba(36, 56, 73, 0.1),
+//     0 0 0 12vw rgba(12, 19, 24, 0.1);
+
+//   position: absolute;
+//   bottom: 10vw;
+//   right: 5vw;
+// }

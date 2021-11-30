@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
+  def about; end
+  def contact; end
+  def further_learning; end
   def home; end
   def projects; end
-  def about; end
-  def further_learning; end
-  def contact; end
   def shoutouts; end
 end

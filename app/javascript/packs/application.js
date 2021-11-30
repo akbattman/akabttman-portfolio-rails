@@ -15,12 +15,9 @@ Turbolinks.start()
 
 // => External / My Node additions
 import "bootstrap"
-// require: "typed"
-
 
 // => Internal / My additions
 import { typeAnim } from "./typedAnim";
-
 
 // => Listeners
 document.addEventListener('turbolinks:load', () => {
