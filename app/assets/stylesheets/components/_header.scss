@@ -15,22 +15,13 @@
   }
 }
 
-#linksAB {
-  width: 160px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 2vw;
-  a {
-    font-size: MIN(2.5vw, 16px);
-  }
-}
-.bat-ico {
+#burgerBat {
   display: block;
-  background-image: image-url('batlogo');
+  background-image: image-url('bat_logo_cutstom-transp');
   background-position: center;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 64px;
+  width: 64px;
   }
 
 

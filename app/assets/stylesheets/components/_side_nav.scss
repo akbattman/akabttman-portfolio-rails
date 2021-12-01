@@ -1,0 +1,11 @@
+#sideNav {
+  width: 32px;
+  height: 12%;
+  position: fixed;
+  right: 0;
+  bottom: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
