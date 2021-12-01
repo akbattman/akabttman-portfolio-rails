@@ -14,6 +14,8 @@ Turbolinks.start()
 // ### | Don't edit above | ### //
 
 // => External / My Node additions
+// require("jquery")
+// import "jquery"
 import "bootstrap"
 
 // => Internal / My additions
