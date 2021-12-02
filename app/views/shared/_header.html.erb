@@ -1,7 +1,17 @@
-<header id="head">
+<header>
   <h6><%= link_to "www.thebatcave.dev", home_path %></h6>
 
-  <div id="burgerBat">
-  </div>
+<div class="dropdown">
+  <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="burgerBat"></i>
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
 
 </header>
+
