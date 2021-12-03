@@ -20,9 +20,11 @@ import "bootstrap"
 
 // => Internal / My additions
 import { typeAnim } from "./typedAnim";
+import { clickSfx } from "./clickSfx";
 
-// => Listeners
+// => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   typeAnim();
+  clickSfx();
 });
