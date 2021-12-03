@@ -6,8 +6,9 @@
   flex-direction: column;
   gap: 16px;
   width: 90%;
-  height: 80%;
-  overflow: scroll;
+  height: 90%;
+  z-index: 1;
+  overflow-y: scroll;
   .shout {
     width: 100%;
     display: flex;
