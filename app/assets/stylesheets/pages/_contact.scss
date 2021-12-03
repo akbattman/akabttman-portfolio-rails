@@ -1,0 +1,17 @@
+.contactMe {
+  align-self: flex-start;
+  border: 1px solid;
+  border-radius: 8px;
+  max-width: 660px;
+  h2 {
+    font-size: MIN(5vw, 32px);
+  }
+  h4 {
+    font-size: MIN(3.5vw, 24px);
+  }
+  P {
+    font-size: MIN(3vw, 16px)
+  }  hr {
+    border: .5px solid;
+  }
+}
