@@ -19,8 +19,8 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal / My additions
-import { typeAnim } from "../src/typedAnim";
-import { clickSfx } from "../src/clickSfx";
+import { typeAnim } from "../components/typedAnim";
+import { clickSfx } from "../components/clickSfx";
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
