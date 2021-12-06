@@ -22,11 +22,15 @@ import "bootstrap"
 import { typeAnim } from "../components/typedAnim";
 import { clickSfx } from "../components/clickSfx";
 import { dimmer } from "../components/dimmer";
+import { batLoad } from "../components/loadSfx";
+import { pageTrans } from "../components/transSfx";
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
+  batLoad();
   typeAnim();
   clickSfx();
   dimmer();
+  pageTrans();
 });

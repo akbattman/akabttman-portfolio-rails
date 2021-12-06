@@ -8,27 +8,6 @@ environment.plugins.prepend('Provide',
     jQuery: 'jquery',
     Popper: ['popper.js', 'default']
   })
-
-// 1
-  // module : {
-  //   rules: [
-  //     {
-  //       test: /\.mp3$/,
-  //       include: SRC,
-  //       loader: 'file-loader'
-  //     }
-  //   ]
-  // }
-  
-// 2
-  // environment.rules = [
-  //   {
-  //     test: /\.mp3$/,
-  //     include: SRC,
-  //     loader: 'file-loader' 
-  //   }
-  // ]
-
 )
 
 
