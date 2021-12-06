@@ -12,7 +12,8 @@ application up and running. -->
 
 * System dependencies
     bootstrap 4+
-
+    jquery
+    popper.js
 
 <!-- * Configuration -->
 
