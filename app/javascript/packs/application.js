@@ -19,18 +19,24 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal / My additions
-import { typeAnim } from "../components/typedAnim";
-import { clickSfx } from "../components/clickSfx";
-import { dimmer } from "../components/dimmer";
-import { batLoad } from "../components/loadSfx";
-import { pageTrans } from "../components/transSfx";
+// import { typeAnim } from "../components/typedAnim";
+// import { clickSfx } from "../components/clickSfx";
+import { menuDim } from "../components/dimmers";
+import { landPermission } from "../components/landPermissionBuild"
+// import { dimmer, htdim } from "../components/dimmer";
+// import { batLoad } from "../components/loadSfx";
+// import { pageTrans } from "../components/transSfx";
+// import { muteToggle } from "../components/muteToggle";
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  batLoad();
-  typeAnim();
-  clickSfx();
-  dimmer();
-  pageTrans();
+  landPermission();
+  menuDim();
+  // htdim();
+  // batLoad();
+  // typeAnim();
+  // clickSfx();
+  // pageTrans();
+  // muteToggle();
 });

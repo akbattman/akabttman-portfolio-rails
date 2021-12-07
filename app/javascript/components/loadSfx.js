@@ -6,7 +6,7 @@ const batLoad = () => {
 
   // })
 
-  batTheme89.play();
+  // batTheme89.play();
 };
 
 
