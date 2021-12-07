@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   def home; end
   def projects; end
   def shoutouts; end
+
+  def test; end
 end

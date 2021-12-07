@@ -10,6 +10,7 @@ const typeAnim = () => {
     // loopCount: Infinity,
     showCursor: false,
   };
+  
   const trDiv = document.getElementById("typed")
   if (trDiv) {
     new Typed('#typed', options);
