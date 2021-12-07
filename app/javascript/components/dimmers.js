@@ -3,8 +3,12 @@ const dimmer = (ele) => {
 }
 
 const landAudioPermissionDim = () => {
-  const slct = document.querySelector('body');
-    dimmer(slct);
+  const slctH = document.querySelector('header');
+  const slctS = document.querySelector('#sideNav');
+  const slctF = document.querySelector('footer');
+    dimmer(slctH);
+    dimmer(slctS);
+    dimmer(slctF);
 }
 
 const menuDim = () => {
