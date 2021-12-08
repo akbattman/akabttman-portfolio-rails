@@ -1,8 +1,10 @@
 .contactMe {
-  align-self: flex-start;
+  position: relative;
+  transform: translateY(-20%);
   border: 1px solid;
   border-radius: 8px;
   max-width: 660px;
+  height: auto;
   h2 {
     font-size: MIN(5vw, 32px);
   }

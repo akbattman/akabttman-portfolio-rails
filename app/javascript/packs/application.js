@@ -19,24 +19,27 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal / My additions
-// import { typeAnim } from "../components/typedAnim";
-import { clickSfx } from "../components/clickSfx";
-import { landPermission } from "../components/landPermissionBuild"
-import { menuDim } from "../components/dimmers";
-// import { dimmer, htdim } from "../components/dimmer";
-import { batLoad } from "../components/loadSfx";
-// import { pageTrans } from "../components/transSfx";
-// import { muteToggle } from "../components/muteToggle";
+import {modalOptionsRmv} from '../functions/modalOptions'
+// // import { typeAnim } from "../components/typedAnim";
+// import { clickSfx } from "../components/clickSfx";
+// import { landPermission } from "../components/landPermissionBuild"
+// import { menuDim } from "../components/dimmers";
+// // import { dimmer, htdim } from "../components/dimmer";
+// import { batLoad } from "../components/loadSfx";
+// // import { pageTrans } from "../components/transSfx";
+// // import { muteToggle } from "../components/muteToggle";
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  landPermission();
-  menuDim();
-  // htdim();
-  batLoad();
-  // typeAnim();
-  clickSfx();
-  // pageTrans();
-  // muteToggle();
+  // // Call your functions here, e.g:
+  modalOptionsRmv();
+
+  // landPermission();
+  // menuDim();
+  // // htdim();
+  // batLoad();
+  // // typeAnim();
+  // clickSfx();
+  // // pageTrans();
+  // // muteToggle();
 });

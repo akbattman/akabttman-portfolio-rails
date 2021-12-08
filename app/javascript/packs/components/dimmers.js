@@ -13,8 +13,11 @@ const landAudioPermissionDim = () => {
 
 const menuDim = () => {
   // const slct = document.querySelector('.yieldContent');
-  document.getElementById("burgerBat").addEventListener('click', (e) => {
+  document.getElementById("burgerBat").addEventListener('toggle', (e) => {
     // dimmer(slct);
+    dimmer(document.querySelector('.yieldContent'));
+  });
+  window.addEventListener('click', (e) => {
     dimmer(document.querySelector('.yieldContent'));
   })
 }

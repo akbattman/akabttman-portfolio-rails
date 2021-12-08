@@ -13,14 +13,10 @@ header {
   }
 }
 
-#burgerBat {
-  display: block;
-  background-image: image-url('bat_logo_cutstom-transp');
-  background-position: center;
-  background-size: cover;
+.logoBat{
   height: 64px;
   width: 64px;
-  }
+}
 
 .dropdown-menu.show {
   background: none;
@@ -28,4 +24,12 @@ header {
 
 .dropdown-item {
   color: $bat-yel;
+  &:hover {
+    background: none;
+    color: $bat-yel;
+  }
+  &:focus {
+    background: none;
+    color: $bat-yel;
+  }
 }
