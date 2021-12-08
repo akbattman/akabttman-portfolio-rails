@@ -20,11 +20,11 @@ import "bootstrap"
 
 // => Internal / My additions
 // import { typeAnim } from "../components/typedAnim";
-// import { clickSfx } from "../components/clickSfx";
-import { menuDim } from "../components/dimmers";
+import { clickSfx } from "../components/clickSfx";
 import { landPermission } from "../components/landPermissionBuild"
+import { menuDim } from "../components/dimmers";
 // import { dimmer, htdim } from "../components/dimmer";
-// import { batLoad } from "../components/loadSfx";
+import { batLoad } from "../components/loadSfx";
 // import { pageTrans } from "../components/transSfx";
 // import { muteToggle } from "../components/muteToggle";
 
@@ -34,9 +34,9 @@ document.addEventListener('turbolinks:load', () => {
   landPermission();
   menuDim();
   // htdim();
-  // batLoad();
+  batLoad();
   // typeAnim();
-  // clickSfx();
+  clickSfx();
   // pageTrans();
   // muteToggle();
 });

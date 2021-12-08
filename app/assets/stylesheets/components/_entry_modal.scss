@@ -1,0 +1,30 @@
+.btnBat {
+  color: $bat-yel;
+  background: none;
+  border: 1px solid $bat-yel;
+  &:hover {
+    color: $bat-yel;
+    background: none;
+    border: 1px solid $bat-yel;
+    box-shadow: 0 0 0 2px $bat-yel;
+    text-shadow: 0 0 2px $bat-yel;
+  }
+  &:focus {
+    color: $bat-yel;
+    background: none;
+    border: 1px solid $bat-yel;
+    box-shadow: 0 0 0 2px $bat-yel;
+    text-shadow: 0 0 2px $bat-yel;
+  }
+}
+
+.btn2bat {
+}
+
+.m-dBat {
+  position: relative;
+  top: 12%;
+}
+.m-cBat {
+  background: none;
+}
