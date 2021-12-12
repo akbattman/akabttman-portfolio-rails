@@ -18,7 +18,7 @@ const audioPermission = () => {
 const muteToggleClk = () => {
   muteBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    muteToggle(e.target);
+    muteToggle(muteBtn);
   })
 }
 
