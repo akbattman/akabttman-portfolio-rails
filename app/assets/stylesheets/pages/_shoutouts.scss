@@ -10,6 +10,7 @@
   z-index: 1;
   overflow-y: scroll;
 }
+
 .shout {
   width: 100%;
   display: flex;
@@ -21,6 +22,7 @@
     overflow-wrap: anywhere;
   }
 }
+
 .shout-item.img001 {
   position: absolute;
   align-self: flex-end;

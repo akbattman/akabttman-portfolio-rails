@@ -24,11 +24,7 @@ header {
 
 .dropdown-item {
   color: $bat-yel;
-  &:hover {
-    background: none;
-    color: $bat-yel;
-  }
-  &:focus {
+  &:hover, &:focus {
     background: none;
     color: $bat-yel;
   }
