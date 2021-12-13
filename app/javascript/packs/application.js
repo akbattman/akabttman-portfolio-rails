@@ -14,14 +14,12 @@ Turbolinks.start()
 // ### | Don't edit above | ### //
 
 // => External / My Node additions
-// require("jquery")
-// import "jquery"
 import "bootstrap"
 
 // => Internal / My additions
 import { test1 } from './components/myTestJs'
-import { modalRmv } from './components/modalRemoval'
-import { muteToggleClk, audioPermission } from './components/muteToggle'
+// import { modalRmv } from './components/modalRemoval'
+// import { muteToggleClk, audioPermission } from './components/muteToggle'
 // // import { typeAnim } from "../components/typedAnim";
 // import { clickSfx } from "../components/clickSfx";
 // import { landPermission } from "../components/landPermissionBuild"

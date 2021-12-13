@@ -18,8 +18,10 @@
   border-radius: 8px;
   .shout-item {
     width: fit-content;
+    overflow-wrap: anywhere;
   }
-  .img001 {
-  border: 1px solid green
-  }
+}
+.shout-item.img001 {
+  position: absolute;
+  align-self: flex-end;
 }
