@@ -8,10 +8,9 @@ const hideEntryBtn = () => {
 
 const removeModal = () => {
   document.querySelectorAll('.modal-footer button').forEach((btn) => {
-  // $$('.modal-footer button').forEach((btn) => {
     btn.addEventListener('click', () => {
-      // console.log(e.target);
       document.querySelector('.entryMod').remove();
+      togHide(document.querySelector('.home-title'));
     })
   })
 }

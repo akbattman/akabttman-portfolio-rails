@@ -18,8 +18,8 @@ import "bootstrap"
 
 // => Internal / My additions
 import { hideEntryBtn, removeModal } from './components/modalCustoms'
+import { typeAnim } from "./components/typedAnim";
 // import { muteToggleClk, audioPermission } from './components/muteToggle'
-// // import { typeAnim } from "../components/typedAnim";
 // import { clickSfx } from "../components/clickSfx";
 // import { landPermission } from "../components/landPermissionBuild"
 // import { menuDim } from "../components/dimmers";
@@ -33,13 +33,13 @@ document.addEventListener('turbolinks:load', () => {
   // // Call your functions here, e.g:
   hideEntryBtn();
   removeModal();
+  typeAnim();
   // audioPermission()
   // muteToggleClk()
   // landPermission();
   // menuDim();
   // // htdim();
   // batLoad();
-  // // typeAnim();
   // clickSfx();
   // // pageTrans();
   // // muteToggle();
