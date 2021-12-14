@@ -17,8 +17,7 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal / My additions
-import { test1 } from './components/myTestJs'
-// import { modalRmv } from './components/modalRemoval'
+import { hideEntryBtn, removeModal } from './components/modalCustoms'
 // import { muteToggleClk, audioPermission } from './components/muteToggle'
 // // import { typeAnim } from "../components/typedAnim";
 // import { clickSfx } from "../components/clickSfx";
@@ -32,8 +31,8 @@ import { test1 } from './components/myTestJs'
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // // Call your functions here, e.g:
-  test1();
-  // modalRmv()
+  hideEntryBtn();
+  removeModal();
   // audioPermission()
   // muteToggleClk()
   // landPermission();
