@@ -6,10 +6,9 @@ const clickSfx = () => {
     clickLink.addEventListener("click", () => {
       
       if (($('#sideNav .volume').attr('disabled')) === 'true') {
-        console.log("volume on");
         clickSfx001.play();
       }else{
-        console.log("volume off");
+        // console.log("volume off - no clk sfx");
       };
     });
   })
