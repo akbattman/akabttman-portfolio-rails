@@ -1,7 +1,8 @@
 import { togHide } from './hideAny'
+import { batLoad } from './loadSfx'
+
 
 const addModal = () => {
-  
   const landPersist = document.querySelector('.home-title');
   const yieldCon = $('.yieldContent');
 
@@ -24,10 +25,21 @@ const hideEntryBtn = () => {
 
 const removeModal = () => {
   document.querySelectorAll('.modal-footer button').forEach((btn) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      
+      if (e.target.classList.contains('btn-primary')) {
+        $('#sideNav .volume').attr('volume-attr', 'true');
+        $('.volume i.fas').toggleClass('fa-volume-mute fa-volume-up');
+        // console.log('YEARP XX');
+      // } else {
+        // console.log('nahh :( ')
+      };
+    
+
       document.querySelector('.entryMod').remove();
       togHide(document.querySelector('.home-title'));
       sessionStorage.setItem("pageloadcount", "1");
+      batLoad();
     })
   })
 }

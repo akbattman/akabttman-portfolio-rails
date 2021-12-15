@@ -1,17 +1,16 @@
-// const batLoad = () => {
+const batLoad = () => {
 
-//   const audio = require("../../assets/audios/batman_original.mp3");
-//   const batTheme89 = new Audio(audio);
+  const audio = require("../../../assets/audios/batman_original.mp3");
+  const batTheme89 = new Audio(audio);
 
-//   if ((document.querySelector('.home-title')) && (localStorage.getItem("pageloadcount"))) {
-//     batTheme89.play();
-//   }else{
-//     if (document.querySelector('#TrAudio')) {
-//       document.querySelector('#TrAudio').addEventListener('click', (e) => {
-//       batTheme89.play();
-//     });
-//   }};
-// }
+  if (($('#sideNav .volume').attr('volume-attr')) === 'true') {
+    console.log('is true')
+    batTheme89.play();
+    // console.log('clk sfx played')
+  } else {
+    console.log("WAS NO HIT vol off - no load sfx");
+  };
+}
 
 
-// export { batLoad }
+export { batLoad }
