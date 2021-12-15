@@ -1,10 +1,3 @@
-const muteBtn = document.querySelector('.volume i.fas');
-
-const muteToggleIcon = (arg) => {
-  arg.classList.toggle('fa-volume-mute');
-  arg.classList.toggle('fa-volume-up');
-}
-
 // const audioPermission = () => {
 //   document.querySelectorAll('.modal-footer button').forEach((btn) => {
 //     btn.addEventListener('click', (e) => {
@@ -16,33 +9,18 @@ const muteToggleIcon = (arg) => {
 // }
 
 const muteToggleClk = () => {
-  muteBtn.addEventListener('click', (e) => {
+  
+  const volIcon = $('.volume i.fas');
+  volIcon.on('click', (e) => {
     e.preventDefault();
-    const volBtn = $('#sideNav .volume');
-    const volState = volBtn.attr('volume');
-    // console.log($('#sideNav .volume'))
-    // console.log($('#sideNav .volume').attr('volume'))
-    // $('#sideNav .volume').attr('volume', 'true')
-    // console.log($('#sideNav .volume').attr('volume'))
-    volState === 'false' ? volBtn.attr('volume', 'true') : volBtn.attr('volume', 'false');
-    // var qq = $('#sideNav .volume');
-    // var qqq = qq.attr('volume');
-    // console.log(qq);
-    // console.log(typeof(qq));
-    // console.log(qqq);
-    // console.log(typeof(qqq));
+    volIcon.toggleClass('fa-volume-mute');
+    volIcon.toggleClass('fa-volume-up');
+  })
 
-
-    // if (qqq === 'false') {
-    //   qq.attr('volume', 'true')
-    // }else{
-    //   qq.attr('volume', 'false')
-    // }
-
-
-
-    // console.log(qq.attr(''))
-    muteToggleIcon(muteBtn);
+  const volBtn = $('#sideNav .volume');
+  volBtn.on('click', (e) => {
+    e.preventDefault();
+    volBtn.attr('volume-attr') === 'false' ? volBtn.attr('volume-attr', 'true') : volBtn.attr('volume-attr', 'false');
   })
 }
 
