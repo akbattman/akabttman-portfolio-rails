@@ -13,11 +13,11 @@ Turbolinks.start()
 
 // ### | Don't edit above | ### //
 
-// => External / My Node additions
+// => External
 import "bootstrap"
 
-// => Internal / My additions
-import { hideEntryBtn, removeModal } from './components/modalCustoms'
+// => Internal
+import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms'
 import { typeAnim } from "./components/typedAnim";
 import { clickSfx } from "./components/clickSfx";
 import { muteToggleClk } from './components/muteToggle'
@@ -26,11 +26,12 @@ import { muteToggleClk } from './components/muteToggle'
 // // import { dimmer, htdim } from "../components/dimmer";
 // import { batLoad } from "../components/loadSfx";
 // // import { pageTrans } from "../components/transSfx";
-// // import { muteToggle } from "../components/muteToggle";
+
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // // Call your functions here, e.g:
+  addModal();
   hideEntryBtn();
   removeModal();
   typeAnim();
@@ -42,5 +43,4 @@ document.addEventListener('turbolinks:load', () => {
   // // htdim();
   // batLoad();
   // // pageTrans();
-  // // muteToggle();
 });

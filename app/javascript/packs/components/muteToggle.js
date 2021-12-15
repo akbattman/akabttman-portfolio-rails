@@ -13,8 +13,8 @@ const muteToggleClk = () => {
   const volIcon = $('.volume i.fas');
   volIcon.on('click', (e) => {
     e.preventDefault();
-    volIcon.toggleClass('fa-volume-mute');
-    volIcon.toggleClass('fa-volume-up');
+    volIcon.toggleClass('fa-volume-mute fa-volume-up');
+    // volIcon.toggleClass('fa-volume-up');
   })
 
   const volBtn = $('#sideNav .volume');
@@ -27,5 +27,6 @@ const muteToggleClk = () => {
 // const muteToggleKey = () => {
 //   // m keyup listener to add and call toggle
 // }
+
 
 export { muteToggleClk }
