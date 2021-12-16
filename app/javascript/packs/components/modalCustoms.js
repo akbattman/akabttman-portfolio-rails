@@ -30,11 +30,10 @@ const removeModal = () => {
       if (e.target.classList.contains('btn-primary')) {
         $('#sideNav .volume').attr('volume-attr', 'true');
         $('.volume i.fas').toggleClass('fa-volume-mute fa-volume-up');
-        // console.log('YEARP XX');
-      // } else {
-        // console.log('nahh :( ')
+        sessionStorage.setItem('persist-vol', "1");
+      } else {
+        sessionStorage.setItem('persist-vol', "0");
       };
-    
 
       document.querySelector('.entryMod').remove();
       togHide(document.querySelector('.home-title'));
@@ -43,11 +42,6 @@ const removeModal = () => {
     })
   })
 }
-
-
-// const audioPermission = () => {
-
-// }
 
 
 export { addModal, hideEntryBtn, removeModal }

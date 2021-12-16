@@ -3,10 +3,10 @@
 
   <%= image_tag 'bat_logo_cutstom-transp.png', class: 'logoBat', role: 'button', id: 'dropdownMenuLink', data: { toggle: "dropdown" }, 'aria-expanded': false %>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <%= link_to "Projects", projects_path, class: "dropdown-item" %>
     <%= link_to "About", about_path, class: "dropdown-item" %>
-    <%= link_to "Further Learning", further_learning_path, class: "dropdown-item" %>
-    <%= link_to "Shoutouts", shoutouts_path, class: "dropdown-item" %>
     <%= link_to "Contact", contact_path, class: "dropdown-item" %>
+    <%= link_to "Further Learning", further_learning_path, class: "dropdown-item" %>
+    <%= link_to "Projects", projects_path, class: "dropdown-item" %>
+    <%= link_to "Shoutouts", shoutouts_path, class: "dropdown-item" %>
   </ul>
 </header>

@@ -17,10 +17,11 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal
-import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms'
+import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms';
+// import { audioSetPermPersist, volClick } from "./components/audioControl";
+import { muteToggleClk, audioPermission } from './components/muteToggle';
 import { typeAnim } from "./components/typedAnim";
-import { clickSfx } from "./components/clickSfx";
-import { muteToggleClk } from './components/muteToggle'
+// import { clickSfx } from "./components/clickSfx";
 // import { landPermission } from "../components/landPermissionBuild"
 // import { menuDim } from "../components/dimmers";
 // // import { dimmer, htdim } from "../components/dimmer";
@@ -30,17 +31,20 @@ import { muteToggleClk } from './components/muteToggle'
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
-  // // Call your functions here, e.g:
+  // // Call your functions here, e.g:, 
   addModal();
   hideEntryBtn();
   removeModal();
+  // audioSetPermPersist();
+  // volClick();
+  audioPermission();
+  muteToggleClk();
   typeAnim();
-  // audioPermission()
-  clickSfx();
-  muteToggleClk()
+  // clickSfx();
   // landPermission();
   // menuDim();
   // // htdim();
   // batLoad();
   // // pageTrans();
+
 });
