@@ -18,8 +18,8 @@ import "bootstrap"
 
 // => Internal
 import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms';
-// import { audioSetPermPersist, volClick } from "./components/audioControl";
-import { muteToggleClk, audioPermission } from './components/muteToggle';
+import { audioSetPermPersist, volClick } from "./components/audioControl";
+// import { muteToggleClk, audioPermission } from './components/muteToggle';
 import { typeAnim } from "./components/typedAnim";
 // import { clickSfx } from "./components/clickSfx";
 // import { landPermission } from "../components/landPermissionBuild"
@@ -35,10 +35,10 @@ document.addEventListener('turbolinks:load', () => {
   addModal();
   hideEntryBtn();
   removeModal();
-  // audioSetPermPersist();
-  // volClick();
-  audioPermission();
-  muteToggleClk();
+  audioSetPermPersist();
+  volClick();
+  // audioPermission();
+  // muteToggleClk();
   typeAnim();
   // clickSfx();
   // landPermission();

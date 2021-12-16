@@ -1,24 +1,24 @@
-const volIcon = $('.volume i.fas');
 const volBtn = $('#sideNav .volume');
 
 
 
 const audioPermission = () => {
-//   if ((sessionStorage.getItem('persist-vol') === '1')) {
-//     console.log('permission should be true');
-//     volBtn.attr('volume-attr', 'true');
-//     // volIcon.toggleClass('fa-volume-mute fa-volume-up');
-//   } else {
-//     console.log('perm should be false');
-//   };
-}
-
+  //   if ((sessionStorage.getItem('persist-vol') === '1')) {
+    //     console.log('permission should be true');
+    //     volBtn.attr('volume-attr', 'true');
+    //     // volIcon.toggleClass('fa-volume-mute fa-volume-up');
+    //   } else {
+      //     console.log('perm should be false');
+      //   };
+    }
+    
 const muteToggleClk = () => {
+  // const volIcon = $('.volume i.fas');
   
-  volIcon.on('click', (e) => {
-    e.preventDefault();
-    volIcon.toggleClass('fa-volume-mute fa-volume-up');
-  })
+  // volIcon.on('click', (e) => {
+  //   e.preventDefault();
+  // volIcon.toggleClass('fa-volume-mute fa-volume-up');
+// })
 
   // $('#sideNav .volume').on('click', 'a', (e) => {
   //   e.preventDefault();
