@@ -20,10 +20,8 @@ import "bootstrap"
 import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms';
 import { audioPermission, volClick } from "./components/audioControl";
 import { typeAnim } from "./components/typedAnim";
-// import { clickSfx } from "./components/clickSfx";
-// import { menuDim } from "../components/dimmers";
-// // import { dimmer, htdim } from "../components/dimmer";
-// // import { pageTrans } from "../components/transSfx";
+import { clickSfx } from "./components/clickSfx";
+import { menuDim } from "./components/dimmers";
 
 
 // => Load Listener
@@ -35,7 +33,7 @@ document.addEventListener('turbolinks:load', () => {
   audioPermission();
   volClick();
   typeAnim();
-  // clickSfx();
-  // menuDim();
+  clickSfx();
+  menuDim();
   // htdim();
 });

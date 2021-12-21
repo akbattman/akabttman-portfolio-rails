@@ -1,19 +1,24 @@
-// const clickSfx = () => {
-//   const audio = require("../../../assets/audios/cartoon_punch_001.mp3");
-//   const clickSfx001 = new Audio(audio);
+const clickSfx = () => {
+  const audioPunch = require("../../../assets/audios/cartoon_punch_001.mp3");
+  const audioMenu = require("../../../assets/audios/batman-transition.mp3");
+  const clickSfx001 = new Audio(audioPunch);
+  const clickSfx002 = new Audio(audioMenu);
   
-//   // document.querySelectorAll("a, button").forEach((clickLink) => {
-//   document.querySelectorAll("a").forEach((clickLink) => {
-//     clickLink.addEventListener("click", (e) => {
-//       if (($('#sideNav .volume').attr('volume-attr')) === 'true') {
-//         clickSfx001.play();
-//         // console.log('clk sfx played')
-//       // } else {
-//       //   console.log("vol off - no clk sfx");
-//       };
-//     })
-//   });
-// }
+  document.querySelectorAll("a").forEach((clickLink) => {
+    clickLink.addEventListener("click", (e) => {
+      if (($('#sideNav .volume').attr('data-volume')) === 'true') {
+        clickSfx001.play();
+      };
+    });
+  });
+
+  $('#dropdownMenuLink').on('click', () => {
+    if (($('#sideNav .volume').attr('data-volume')) === 'true') {
+      clickSfx002.play();
+    };
+  });
+
+}
 
 
-// export { clickSfx };
+export { clickSfx }
