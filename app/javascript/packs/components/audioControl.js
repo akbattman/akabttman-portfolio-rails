@@ -1,58 +1,50 @@
-// // const volBtn = $('#sideNav .volume');
-// // const volIcon = $('.volume i.fas');
-// const volBtn = document.querySelector('.volume');
-// const volIcon = document.querySelector('.volume i.fas');
-
+// ternary refactor ONLY AFTER full navigation testing 
 const volIconTog = () => {
-  $('.volume i.fas').toggleClass('fa-volume-mute fa-volume-up');
-};
-
-
-const volAttrTog = () => {
-  const volBtn = $('#sideNav .volume')
-  if (volBtn.attr('volume-attr') === 'false') {
-    volBtn.attr('volume-attr', 'true');
-    sessionStorage.setItem('persist-vol', "1");
-  } else {
-    volBtn.attr('volume-attr', 'false');
-    sessionStorage.setItem('persist-vol', "0");
-  };
-};
-
-
-const audioSetPermPersist = () => {
   if ((sessionStorage.getItem('persist-vol') === '1')) {
-    console.log(sessionStorage.getItem('persist-vol'), 'persist on');
+    $('.volume i.fas').removeClass('fa-volume-mute').addClass('fa-volume-up');
+    
   } else if ((sessionStorage.getItem('persist-vol') === '0')) {
-    console.log(sessionStorage.getItem('persist-vol'), 'persist off');
+    $('.volume i.fas').removeClass('fa-volume-up').addClass('fa-volume-mute');
+
   } else {
-    console.log('no persist item set');
+    console.log('no storage set yet - check call order/logic');
   };
 };
+
+// ternary refactor ONLY AFTER full navigation testing 
+const volDataTog = () => {
+  const volBtn = $('#sideNav .volume');
+
+  if ((sessionStorage.getItem('persist-vol') === '1')) {
+    volBtn.attr('data-volume', 'true');
+  
+  } else if ((sessionStorage.getItem('persist-vol') === '0')) {
+    volBtn.attr('data-volume', 'false');
+    
+  } else {
+    console.log('no storage set yet - check call order/logic')
+  };
+};
+
+
+const audioPermission = () => {
+  // better listener required || rails v7 update/migrate 
+  document.addEventListener('turbolinks:render', (e) => {
+    volDataTog();
+    volIconTog();
+  });
+};
+
 
 const volClick = () => {
-
-  // volIcon.addEventListener('click', (e) => {
-  // // volIcon.on('click', (e) => {
-  //   e.preventDefault();
-  //   // e.stopPropagation();
-  //   // volIconTog();
-  //   console.log(e);
-  //   // return false;
-  // })
-
-  // volBtn.addEventListener('click', (e) => {
-    $('#sideNav .volume').on('click', (e) => {
+  // click prevention before permission reqd'
+  $('.volume').on('click', (e) => {
     e.preventDefault();
-    console.log(e);
-    // e.stopPropagation();
-    // volAttrTog();
-    // volIconTog();
-    // console.log(e);
-    // return false;
+    (sessionStorage.getItem('persist-vol') === '1') ? sessionStorage.setItem('persist-vol', '0') : sessionStorage.setItem('persist-vol', '1');
+    volDataTog();
+    volIconTog();
   });
-
 };
 
 
-export { audioSetPermPersist, volClick };
+export { volClick, volDataTog, volIconTog, audioPermission };
