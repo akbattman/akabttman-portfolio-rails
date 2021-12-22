@@ -17,16 +17,19 @@ Turbolinks.start()
 import "bootstrap"
 
 // => Internal
+import { tooltips } from './components/xtraBtStrpInit';
 import { addModal, hideEntryBtn, removeModal } from './components/modalCustoms';
 import { audioPermission, volClick } from "./components/audioControl";
-import { typeAnim } from "./components/typedAnim";
-import { clickSfx } from "./components/clickSfx";
-import { menuDim } from "./components/dimmers";
+import { typeAnim } from './components/typedAnim';
+import { clickSfx } from './components/clickSfx';
+import { menuDim } from './components/dimmers';
+import { cvDisplay } from './components/cvDisplay'
 
 
 // => Load Listener
 document.addEventListener('turbolinks:load', () => {
   // // Call your functions here, e.g:, 
+  tooltips();
   addModal();
   hideEntryBtn();
   removeModal();
@@ -35,5 +38,6 @@ document.addEventListener('turbolinks:load', () => {
   typeAnim();
   clickSfx();
   menuDim();
+  cvDisplay();
   // htdim();
 });

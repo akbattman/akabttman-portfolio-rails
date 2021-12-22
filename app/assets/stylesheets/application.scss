@@ -26,6 +26,29 @@ body {
     }
   }
 }
+
+.yieldContent {
+  width: auto;
+  height: 92vh;
+  padding: 16px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.dimmer {
+  opacity: .2;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   // height: 4px;
@@ -56,23 +79,3 @@ body {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-
-.yieldContent {
-  width: auto;
-  height: 92vh;
-  padding: 16px;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-.dimmer {
-  opacity: .2;
-}
- .hidden {
-   display: none;
- }
- .disabled {
-   pointer-events: none;
- }

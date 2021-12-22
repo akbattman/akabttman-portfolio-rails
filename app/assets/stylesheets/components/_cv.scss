@@ -1,0 +1,17 @@
+.cvab {
+  height: 85vh;
+  width:60vh;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: white;
+  border: 1px solid red;
+
+  button {
+    width: 30px;
+    height: 15px;
+  }
+}

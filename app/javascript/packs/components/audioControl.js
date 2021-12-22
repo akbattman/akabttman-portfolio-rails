@@ -33,7 +33,7 @@ const audioPermission = () => {
       // # ^ could eliminate this function requirement alltogether ^ # //
   // const sn = document.querySelector('#sideNav');
   document.addEventListener('turbolinks:render', (e) => {
-    console.log(e);
+    // console.log(e);
     volDataTog();
     volIconTog();
   });

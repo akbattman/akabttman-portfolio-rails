@@ -19,4 +19,4 @@ const menuDim = () => {
 }
 
 
-export { menuDim }
+export { dimmer, menuDim }

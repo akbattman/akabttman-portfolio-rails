@@ -1,0 +1,21 @@
+.aboutMe{
+  align-self: flex-start;
+  border: 1px solid;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+  max-height: 90%;
+  z-index: 1;
+  overflow-y: scroll;
+
+  .aboutMe-item {
+    border: 1px solid red;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  // .aboutMe-item.title {
+  // }
+}
