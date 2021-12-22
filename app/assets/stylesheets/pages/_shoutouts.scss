@@ -29,4 +29,9 @@
   img {
     border-radius: 6%;
   }
+  // sibling combinator
+  & + p { 
+    max-width: 85%;
+  }
 }
+
