@@ -28,8 +28,12 @@ const volDataTog = () => {
 
 
 const audioPermission = () => {
-  // better listener required || rails v7 update/migrate 
+  // better listener required || rails v7 update/migrate
+    // data-turbolinks-permanent - persist ele attr & listeners through renders
+      // # ^ could eliminate this function requirement alltogether ^ # //
+  // const sn = document.querySelector('#sideNav');
   document.addEventListener('turbolinks:render', (e) => {
+    console.log(e);
     volDataTog();
     volIconTog();
   });
