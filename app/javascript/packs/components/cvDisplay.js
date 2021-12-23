@@ -5,22 +5,29 @@ const cvDisplay = () => {
     e.preventDefault();
     console.log('new click');
 
-    dimmer($('header, footer, #sideNav, .yieldContent'));
+    // dimmer($('header, footer, #sideNav, .yieldContent'));
     
-    $('header, footer, #sideNav').toggleClass('disabled');
+    // $('header, footer, #sideNav').toggleClass('disabled');
+
+    // $('.cvAB-img').toggleClass('hidden');
     
-    // overlay pop up CV img
-    $('body').prepend('<div class="cvab p-3"><button type="button" class="btnBat-close"></button></div>');
+    // // overlay pop up CV img
+    // // $('body').prepend('<div class="cvab p-3"><button type="button" class="btnBat-close"></button><%= image_tag \'abcv21.png\' %></div>');
+    // // $('body').prepend("<%= j render(:partial => 'shared/cvab') %>");
+    // // $('body').prepend('<%= escape_javascript(render partial: => "shared/cvab") %>');
 
-    $('.cvab button').on('click', (e) => {
-      $('.cvab').remove();
 
-      dimmer($('header, footer, #sideNav, .yieldContent'));
+
+    // $('.cvAB-img button').on('click', (e) => {
+
+    //   $('.cvAB-img').toggleClass('hidden');
+
+    //   dimmer($('header, footer, #sideNav, .yieldContent'));
     
-      $('header, footer, #sideNav').toggleClass('disabled');
+    //   $('header, footer, #sideNav').toggleClass('disabled');
 
 
-    })
+    // })
 
   });
 }

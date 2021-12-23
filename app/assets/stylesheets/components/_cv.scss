@@ -1,17 +1,25 @@
-.cvab {
-  height: 85vh;
-  width:60vh;
+.cvAB-img {
+  height: 80vh;
+  width: 56vh;
   z-index: 1;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: white;
-  border: 1px solid red;
+  background-image: url('abcv21');
+  background-size: cover;
+  background-position: center;
 
+  border: 1px solid $bat-yel;
+  
   button {
     width: 30px;
     height: 15px;
+
+    position: absolute;
+    top: -1vw;
+    right: -1vw;
   }
 }
