@@ -1,6 +1,6 @@
 import { togHide } from './hideAny'
 import { batLoad } from './loadSfx'
-import { volDataTog, volIconTog } from './audioControl'
+import { volDOMTog } from './audioControl'
 
 
 const addModal = () => {
@@ -37,8 +37,7 @@ const removeModal = () => {
         sessionStorage.setItem('persist-vol', "0");
       };
 
-      volDataTog();
-      volIconTog();
+      volDOMTog();
       batLoad();
       document.querySelectorAll('header, footer, #sideNav').forEach((divEle) => {
         divEle.classList.remove('disabled', 'dimmer');

@@ -1,54 +1,35 @@
-// ternary refactor ONLY AFTER full navigation testing 
-const volIconTog = () => {
-  if ((sessionStorage.getItem('persist-vol') === '1')) {
-    $('.volume i.fas').removeClass('fa-volume-mute').addClass('fa-volume-up');
-    
-  } else if ((sessionStorage.getItem('persist-vol') === '0')) {
-    $('.volume i.fas').removeClass('fa-volume-up').addClass('fa-volume-mute');
 
-  } else {
-    console.log('no storage set yet - check call order/logic');
-  };
-};
-
-// ternary refactor ONLY AFTER full navigation testing 
-const volDataTog = () => {
+const volDOMTog = () => {
   const volBtn = $('#sideNav .volume');
-
-  if ((sessionStorage.getItem('persist-vol') === '1')) {
-    volBtn.attr('data-volume', 'true');
+  const volIcon = $('.volume i.fas');
   
-  } else if ((sessionStorage.getItem('persist-vol') === '0')) {
-    volBtn.attr('data-volume', 'false');
+  (sessionStorage.getItem('persist-vol') === '1') ?
+    (volBtn.attr('data-volume', 'true'),
+    volIcon.removeClass('fa-volume-mute').addClass('fa-volume-up')) :
     
-  } else {
-    console.log('no storage set yet - check call order/logic')
-  };
+    (volBtn.attr('data-volume', 'false'),
+    volIcon.removeClass('fa-volume-up').addClass('fa-volume-mute'));
 };
 
 
 const audioPermission = () => {
   // better listener required || rails v7 update/migrate
-    // data-turbolinks-permanent - persist ele attr & listeners through renders
+    // data-turbolinks-permanent - persist ele.attr & listeners through renders
       // # ^ could eliminate this function requirement alltogether ^ # //
-  // const sn = document.querySelector('#sideNav');
+  volDOMTog();
   document.addEventListener('turbolinks:render', (e) => {
-    // console.log(e);
-    volDataTog();
-    volIconTog();
+    volDOMTog();
   });
 };
 
 
 const volClick = () => {
-  // click prevention before permission reqd'
   $('.volume').on('click', (e) => {
     e.preventDefault();
     (sessionStorage.getItem('persist-vol') === '1') ? sessionStorage.setItem('persist-vol', '0') : sessionStorage.setItem('persist-vol', '1');
-    volDataTog();
-    volIconTog();
+    volDOMTog();
   });
 };
 
 
-export { volClick, volDataTog, volIconTog, audioPermission };
+export { volClick, volDOMTog, audioPermission };
