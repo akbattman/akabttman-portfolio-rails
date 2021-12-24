@@ -6,13 +6,15 @@ const clickSfx = () => {
   
   document.querySelectorAll("a").forEach((clickLink) => {
     clickLink.addEventListener("click", (e) => {
-      if (($('#sideNav .volume').attr('data-volume')) === 'true') {
+      if ((($('#sideNav .volume').attr('data-volume')) === 'true') && (!e.target.classList.contains('fa-file-alt'))) {
         clickSfx001.play();
+        console.log(e.target)
       };
     });
   });
 
-  $('#dropdownMenuLink').on('click', () => {
+  
+  $('#dropdownMenuLink, .fa-file-alt').on('click', () => {
     if (($('#sideNav .volume').attr('data-volume')) === 'true') {
       clickSfx002.play();
     };
