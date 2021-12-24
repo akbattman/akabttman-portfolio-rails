@@ -16,7 +16,7 @@ const cvDisplay = () => {
 
     dimmer($('header, footer, #sideNav, .yieldContent'));
     $('header, footer, #sideNav').toggleClass('disabled');
-    $('body').prepend('<div class="cvAB-img"><button type="button" class="btnBat-close"></button></div>');
+    $('body').prepend('<div class="cvAB-img"><button type="button" class="btnBat-close">Close X</button></div>');
 
     cvRemove();
   });

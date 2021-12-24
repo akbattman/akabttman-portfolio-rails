@@ -13,13 +13,26 @@
   background-position: center;
 
   border: 1px solid $bat-yel;
+
+  &:hover {
+    box-shadow: 0 0 0 2px $bat-yel;
+  }
   
   button {
-    width: 30px;
-    height: 15px;
+    // width: 60px;
+    // height: 20px;
+
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: x-small;
 
     position: absolute;
-    top: -1vw;
-    right: -1vw;
+    top: -20px;
+    right: -16px;
+
+    &:hover {
+      font-weight: bolder;
+    }
   }
 }
