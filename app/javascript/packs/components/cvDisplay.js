@@ -2,7 +2,7 @@ import { dimmer } from './dimmers'
 
 const cvRemove = () => {
   $('.btnBat-close').on ('click', () => {
-    
+
     dimmer($('header, footer, #sideNav, .yieldContent'));
     $('header, footer, #sideNav').toggleClass('disabled');
     $('.cvAB-img').remove();
@@ -24,4 +24,3 @@ const cvDisplay = () => {
 
 
 export { cvDisplay }
-   

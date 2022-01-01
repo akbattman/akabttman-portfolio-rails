@@ -13,7 +13,7 @@ const clickSfx = () => {
     });
   });
 
-  
+
   $('#dropdownMenuLink, .fa-file-alt').on('click', () => {
     if (($('#sideNav .volume').attr('data-volume')) === 'true') {
       clickSfx002.play();

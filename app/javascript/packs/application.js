@@ -39,5 +39,4 @@ document.addEventListener('turbolinks:load', () => {
   clickSfx();
   menuDim();
   cvDisplay();
-  // htdim();
 });
