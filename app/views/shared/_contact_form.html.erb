@@ -1,8 +1,28 @@
 <div class="contactForm">
-  <%# <%= simple_form_for @user do |f| %>
-    <%# <%= f.input :name %>
-    <%# <%= f.input :description %>
-    <%# <%= f.button :submit %>
-  <%# <% end %> 
+
+
+  <h3>Message Aaron Directly</h1><br>
+  <%= form_for @message do |f| %>
+    <%# <div class="col-md-6"> %>
+      <%= f.label :name %><br>
+      <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: 'Your Name' %>
+      <br>
+
+      <%= f.label :email %><br>
+      <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: 'your.email@example.com' %>
+      <br>
+
+      <%= f.label :message %><br>
+      <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area message", placeholder: 'Send me a message'%>
+      <br>
+
+      <div class= "d-none">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+
+      <%= f.submit 'Send Message', class: 'btn btn-primary btnBat' %>
+    <%# </div> %>
+  <% end %>
 
 </div>

@@ -18,14 +18,6 @@
   <body>
     <%= render "shared/header" %>
     <%= render "shared/side_nav" %>
-    <%# <%= render "shared/cvab" %>
-    
-    <div class="container">
-      <br>
-      <% flash.each do |key, message| %>
-        <p class="alert alert-<%= key %>"><%= message %></p>
-      <% end %>
-    </div>
 
     <div class="yieldContent">
       <%= yield %>

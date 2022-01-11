@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'shoutouts', to: 'pages#shoutouts'
 
-  resources :contacts, only: [:new, :create]
+  resources :messages, only: [:new, :create]
 end
