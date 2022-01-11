@@ -24,6 +24,7 @@ import { typeAnim } from './components/typedAnim';
 import { clickSfx } from './components/clickSfx';
 import { menuDim } from './components/dimmers';
 import { cvDisplay } from './components/cvDisplay'
+// import { messageMeDisplay } from './components/contactForm'
 
 
 // => Load Listener
@@ -39,4 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   clickSfx();
   menuDim();
   cvDisplay();
+  // messageMeDisplay();
 });

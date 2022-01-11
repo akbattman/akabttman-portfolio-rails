@@ -1,9 +1,9 @@
 #sideNav {
   width: 32px;
-  height: 12%;
+  height: auto;
   position: fixed;
   right: 0;
-  bottom: 16vh;
+  bottom: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +16,11 @@
 //   background-color: #f00;
 // }
 
+// .arrow {
+//   // background: $bat-yel;
+// }
+
 .tooltip-inner {
   color: inherit;
   background: none;
 }
-// .arrow {
-//   // background: $bat-yel;
-// }
