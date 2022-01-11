@@ -5,7 +5,7 @@ const typeAnim = () => {
   const trDiv = document.getElementById("typed");
   const obsvEle = document.querySelector('.home-title');
   const config = { attributes: true };
-  const options = { strings: ["&ensp;Fullstacker = (arg, moi) => { <br><br> &emsp;//&ensp; Web App Developer <br> &ensp;&emsp;&amp;&amp;&ensp; Software Engineer. <br><br> &emsp;#&ensp; Available to interview <br> &emsp;&ensp;||&ensp; Contact Me &ensp; :D &nbsp; <br> &ensp;};"], typeSpeed: 60, showCursor: false };
+  const options = { strings: ["&ensp;Fullstacker = (arg, moi) => { <br><br> &emsp;//&ensp; Web App Developer <br> &ensp;&emsp;&amp;&amp;&ensp; Software Engineer ; <br><br> &emsp;#&ensp; Available to interview <br> &emsp;&ensp;||&ensp; Contact Me &ensp; :D ; &nbsp; <br> &ensp;}"], typeSpeed: 60, showCursor: false };
 
   if ((trDiv) && (sessionStorage.getItem("pageloadcount"))) {
 

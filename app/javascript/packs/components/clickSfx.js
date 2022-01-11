@@ -8,7 +8,7 @@ const clickSfx = () => {
     clickLink.addEventListener("click", (e) => {
       if ((($('#sideNav .volume').attr('data-volume')) === 'true') && (!e.target.classList.contains('fa-file-alt'))) {
         clickSfx001.play();
-        console.log(e.target)
+        // console.log(e.target)
       };
     });
   });
