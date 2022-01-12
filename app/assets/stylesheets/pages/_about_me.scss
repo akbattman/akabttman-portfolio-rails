@@ -1,21 +1,49 @@
-.aboutMe{
-  align-self: flex-start;
+.aboutMe {
+  display: flex;
+  align-items: flex-start;
+
+  position: relative;
+
+  top: -10%;
+
   border: 1px solid;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   width: 90%;
-  max-height: 90%;
-  z-index: 1;
-  overflow-y: scroll;
+  height: 80%;
+}
 
-  .aboutMe-item {
-    border: 1px solid red;
-    height: auto;
-    width: auto;
-    text-align: center;
-  }
-  // .aboutMe-item.title {
-  // }
+.aboutMe-Head {
+  border: 1px solid red;
+}
+
+
+.aboutMe-Pic {
+  border-radius: 8%;
+  border: 1px solid;
+  position: absolute;
+  z-index: 2;
+}
+
+.pic001 {
+  width: auto;
+  height: 200px;
+  transform: rotate(16deg);
+  top: 0;
+  right: -2%;
+}
+
+.pic002 {
+  width: 320px;
+  height: auto;
+  transform: rotate(-8deg);
+  bottom: -2%;
+  right: 12%;
+}
+
+.pic003 {
+  width: auto;
+  height: 200px;
+  transform: rotate(-16deg);
+  top: 28%;
+  left: -2%;
 }
