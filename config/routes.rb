@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'further_learning', to: 'pages#further_learning'
   get 'projects', to: 'pages#projects'
   get 'shoutouts', to: 'pages#shoutouts'
+
+  resources :messages, only: [:new, :create]
 end
