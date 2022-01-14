@@ -1,7 +1,7 @@
 .aboutMe {
   display: flex;
   align-items: flex-start;
-
+  flex-direction: column;
   position: relative;
 
   top: -10%;
@@ -13,6 +13,8 @@
 }
 
 .aboutMe-Head {
+
+  
   border: 1px solid red;
 }
 
@@ -24,9 +26,15 @@
   z-index: 2;
 }
 
+.aboutMe-Biog {
+  // width: 72%;
+
+  border: 1px solid;
+}
+
 .pic001 {
-  width: auto;
-  height: 200px;
+  // width: auto;
+  // height: 200px;
   transform: rotate(16deg);
   top: 0;
   right: -2%;

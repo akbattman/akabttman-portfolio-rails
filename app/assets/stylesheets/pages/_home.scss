@@ -8,11 +8,9 @@
   left: 32px;
   color: rgb(120, 120, 120);
   h1 {
-    font-size: MIN(8vw, 40px); // force CSS3 compile.
     font-family: $typewriter;
   }
   h2 {
-    font-size: MIN(5vw, 32px);
     font-family: $typewriter;
   }
 }

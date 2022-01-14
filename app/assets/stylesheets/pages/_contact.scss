@@ -3,17 +3,7 @@
   transform: translateY(-20%);
   border: 1px solid;
   border-radius: 8px;
-  max-width: 660px;
+  width: 660px;
+  max-width: 90%;
   height: auto;
-  h2 {
-    font-size: MIN(5vw, 32px);
-  }
-  h4 {
-    font-size: MIN(3.5vw, 24px);
-  }
-  P {
-    font-size: MIN(3vw, 16px)
-  }  hr {
-    border: .5px solid;
-  }
 }
