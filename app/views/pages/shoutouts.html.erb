@@ -18,6 +18,7 @@
   <div class="shout suzlePants p-3">
     <h4 class="shout-item">Susannah C. Taylor</h4>
     <div class="shout-item img002">
+      <%= image_tag 'grad_suze.png', width: '64px', height: '64px' %>
     </div>
     <p class="shout-item">
       &ensp;It would be remiss of me not to mention my partner whose un-wavering support and confidence in my passions has allowed me to pursue and undertake this epic journey into the world of development.<br>
@@ -27,10 +28,10 @@
 
   <div class="shout creds p-3">
     <h4 class="shout-item">Additional Credits</h4>
-    <p class="shout-item">
-        * typed.js - homepage title animation<br>
-        * https://www.zapsplat.com - additional soundFX
-    </p>
+      <ul class="shout-item">
+        <li>homepage title animation - <%= link_to 'https://github.com/mattboldt/typed.js', 'https://github.com/mattboldt/typed.js', target: 'blank' %></li>
+        <li>additional soundFX - <%= link_to 'https://www.zapsplat.com', 'https://www.zapsplat.com', target: 'blank' %></li>
+      </ul>
   </div>
 
 </div>
