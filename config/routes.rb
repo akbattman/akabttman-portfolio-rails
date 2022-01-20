@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'shoutouts', to: 'pages#shoutouts'
 
-  resources :messages, only: [:new, :create]
+  # resources :messages, only: [:new, :create]
+
+  get "messages/new", to: "messages#new", as: :message_aaron
+  post "messages", to: "messages#create"
 end

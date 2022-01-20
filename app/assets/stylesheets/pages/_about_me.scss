@@ -3,7 +3,7 @@
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-
+  gap: 8px;
   top: -10%;
 
   border: 1px solid;
@@ -12,24 +12,27 @@
   height: 80%;
 }
 
-.aboutMe-Head {
-
-  
+.aboutMe-item {
   border: 1px solid red;
 }
 
+.aboutMe-Head {
+
+}
+
+.aboutMe-Biog {
+
+}
+
+.aboutMe-Goals {
+
+}
 
 .aboutMe-Pic {
   border-radius: 8%;
   border: 1px solid;
   position: absolute;
   z-index: 2;
-}
-
-.aboutMe-Biog {
-  // width: 72%;
-
-  border: 1px solid;
 }
 
 .pic001 {
