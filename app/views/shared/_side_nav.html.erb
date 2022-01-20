@@ -2,9 +2,9 @@
 
   <a href="javascript:void(0)" class="volume tooltip-Bat" data-toggle="tooltip" data-placement="left" title="Volume/Mute Toggle" data-volume="false"><i class="fas fa-volume-mute"></i></a>
 
-  <%= link_to message_aaron_path do %>
-  <i class="far fa-address-book contactFormIcon tooltip-Bat" data-toggle="tooltip" data-placement="left" title="Direct Contact Form"></i>
   <%# <a href="messages/new" class="contactFormIcon tooltip-Bat" data-toggle="tooltip" data-placement="left" title="Direct Contact Form"><i class="far fa-address-book"></i></a> %>
+  <%= link_to message_aaron_path, class: "contactFormIcon tooltip-Bat", data: {toggle: 'tooltip', placement: 'left'}, title: "Direct Contact Form"  do %>
+    <i class="far fa-address-book"></i>
   <% end %>
 
   <a href="javascript:void(0)" class="cvAB tooltip-Bat" data-toggle="tooltip" data-placement="left" title="See Aaron's CV"><i class="far fa-file-alt"></i></a>
