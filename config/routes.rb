@@ -10,6 +10,6 @@ Rails.application.routes.draw do
 
   # resources :messages, only: [:new, :create]
 
-  get "messages/new", to: "messages#new", as: :message_aaron
+  get "messages/new", to: "messages#new", as: :message_aaron # believed this would chage url ##INCORRECT - REVISE
   post "messages", to: "messages#create"
 end
