@@ -1,9 +1,32 @@
-.contactMe {
-  position: relative;
-  transform: translateY(-20%);
-  border: 1px solid;
-  border-radius: 8px;
-  width: 660px;
+// .contactMe {
+//   position: relative;
+//   transform: translateY(-20%);
+//   border: 1px solid;
+//   border-radius: 8px;
+//   width: 660px;
+//   max-width: 90%;
+//   height: auto;
+// }
+.connections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  overflow: hidden;
+}
+
+.connect-card {
+  width: fit-content;
   max-width: 90%;
-  height: auto;
+
+  border: $primBord;
+  border-radius: $primBord-Rad;
+
+
+  overflow: hidden;
+  h2 {
+    text-align: center;
+  }
 }
