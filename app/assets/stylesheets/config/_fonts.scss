@@ -17,25 +17,25 @@ $monst: 'Montserrat', sans-serif;
 
 body {
   h1 {
-    font-size: MIN(10vw, 40px); // force CSS3 compile.
+    font-size: MIN(10vw, 56px); // force CSS3 compile.
   }
   h2 {
-    font-size: MIN(7.5vw, 36px);
+    font-size: MIN(7.5vw, 48px);
   }
   h3 {
-    font-size: MIN(7.55vw, 24px);
+    font-size: MIN(6vw, 40px);
   }
   h4 {
-    font-size: MIN(5vw, 18px);
+    font-size: MIN(5vw, 32px);
   }
   h5 {
-    font-size: MIN(3.25vw, 18px);
+    font-size: MIN(4vw, 24px);
   }
   h6 {
     font-size: MIN(3.25vw, 16px);
   }
   P {
-    font-size: MIN(2vw, 16px)
+    font-size: MIN(3vw, 16px)
   } 
 }
 

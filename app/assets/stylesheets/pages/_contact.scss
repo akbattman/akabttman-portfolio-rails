@@ -1,20 +1,9 @@
-// .contactMe {
-//   position: relative;
-//   transform: translateY(-20%);
-//   border: 1px solid;
-//   border-radius: 8px;
-//   width: 660px;
-//   max-width: 90%;
-//   height: auto;
-// }
 .connections {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-
-  overflow: hidden;
 }
 
 .connect-card {
@@ -24,9 +13,23 @@
   border: $primBord;
   border-radius: $primBord-Rad;
 
-
-  overflow: hidden;
-  h2 {
+  h3.title {
     text-align: center;
   }
+  h4.mail-me {
+    text-align: center;
+    font-size: MIN(4.5vw, 32px);
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.contactFormBtn input {
+  font-size: MIN(3.5vw, 16px);
+  max-width: 80vw;
 }

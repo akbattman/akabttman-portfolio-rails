@@ -1,48 +1,26 @@
 <div class="connections p-3">
   <div class="connect-card p-3">
-    <h2>CONNECT WITH ME</h2>
+    <h3 class="title">CONNECT WITH ME</h3>
     <hr>
     <br>
 
-    <h4><a href="https://github.com" target="blank">GitHub</a></h4> 
-    <h6><a href="https://github.com/akbattman" target="blank">https://github.com/akbattman</a></h6>
+    <h3><a href="https://github.com" target="blank">GitHub</a></h3> 
+    <h5><a href="https://github.com/akbattman" target="blank">https://github.com/akbattman</a></h5>
 
-    <h4><a href="https://www.linkedin.com" target="blank">LinkedIn</a></h4> 
-    <h6><a href="https://www.linkedin.com/in/akbattman" target="blank">https://www.linkedin.com/in/akbattman</a></h6>
+    <h3><a href="https://www.linkedin.com" target="blank">LinkedIn</a></h3> 
+    <h5><a href="https://www.linkedin.com/in/akbattman" target="blank">https://www.linkedin.com/in/akbattman</a></h5>
 
-    <h4><a href="https://twitter.com" target="blank">Twitter</a></h4> 
-    <h6><a href="https://twitter.com/akbattman" target="blank">https://twitter.com/akbattman</a></h6>
+    <h3><a href="https://twitter.com" target="blank">Twitter</a></h3> 
+    <h5><a href="https://twitter.com/akbattman" target="blank">https://twitter.com/akbattman</a></h5>
 
     <br>
     <hr>
-    <h4><a href="mailto:aaron.k.battman@outllok.com" target="blank">Email: aaron.k.battman@outlook.com</a></h4>
+    <h4 class="mail-me"><a href="mailto:aaron.k.battman@outllok.com" target="blank">Email: aaron.k.battman@outlook.com</a></h4>
   </div>
 
   <div class="contactFormBtn">
-    <input type="submit" value="Or message me directly here" class="btn btn-primary btnBat">
+    <%= link_to message_aaron_path do %>
+      <input type="submit" value="Or message me directly here" class="btn btn-primary btnBat">
+    <% end %>
   </div>
 </div>
-
-
-
-
-
-
-<%# <div class="container contactMe mt-3 p-3">
-  <h2>CONNECT WITH ME</h2>
-  <hr>
-  <br>
-
-  <h4><a href="https://github.com" target="blank">GitHub</a></h4> 
-  <p><a href="https://github.com/akbattman" target="blank">https://github.com/akbattman</a></p>
-
-  <h4><a href="https://www.linkedin.com" target="blank">LinkedIn</a></h4> 
-  <p><a href="https://www.linkedin.com/in/akbattman" target="blank">https://www.linkedin.com/in/akbattman</a></p>
-
-  <h4><a href="https://twitter.com" target="blank">Twitter</a></h4> 
-  <p><a href="https://twitter.com/akbattman" target="blank">https://twitter.com/akbattman</a></p>
-
-  <br>
-  <hr>
-  <h4><a href="mailto:aaron.k.battman@outllok.com" target="blank">Email: aaron.k.battman@outlook.com</a></h4> 
-</div> %>
