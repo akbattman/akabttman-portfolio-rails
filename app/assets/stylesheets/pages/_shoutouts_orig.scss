@@ -1,0 +1,48 @@
+.shoutout {
+  align-self: flex-start;
+  border: 1px solid;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+  max-height: 90%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.shout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid $bat-yel;
+  border-radius: 8px;
+  .shout-item {
+    width: fit-content;
+    overflow-wrap: anywhere;
+    margin: 0;
+  }
+}
+
+.shout-item.img001, .img002  {
+  position: absolute;
+  align-self: flex-end;
+  img {
+    border-radius: 6%;
+  }
+  // sibling combinator
+  & + p { 
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .shout-item.img001 {
+    top: 52px;
+  }
+
+  .shout-item.img002 {
+    bottom: 8px;
+  }
+}

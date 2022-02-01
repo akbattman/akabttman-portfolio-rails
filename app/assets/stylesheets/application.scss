@@ -1,6 +1,7 @@
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
+@import "config/compo_styling";
 @import "config/bootstrap_variables";
 
 // External libraries
@@ -27,29 +28,8 @@ body {
   }
 }
 
-h1 {
-  font-size: MIN(8vw, 40px); // force CSS3 compile.
-}
-h2 {
-  font-size: MIN(5vw, 32px);
-}
-h4 {
-  font-size: MIN(3.5vw, 24px);
-}
-P {
-  font-size: MIN(3vw, 16px)
-}  hr {
-  border: .5px solid;
-}
-
 .yieldContent {
-  width: 100%;
   height: 92vh;
-  padding: 16px;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
 }
 
 .dimmer {

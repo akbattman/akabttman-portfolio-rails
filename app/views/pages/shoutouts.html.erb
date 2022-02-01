@@ -1,39 +1,50 @@
-<div class="shoutout p-3">
-  
-  <div class="shout leWagon p-3">
-    <h4 class="shout-item">Le Wagon</h4>
-    <div class="shout-item img001">
-      <%= link_to 'https://www.lewagon.com/', target: 'blank' do %>
-        <%= image_tag 'https://avatars.githubusercontent.com/u/5470001?s=64&v=4' %>
-      <% end %>
-    </div>
-    <p class="shout-item">Coding School bringing Technical Skills to Creative People</p>
-    <br>
-    <a class="shout-item" href="https://www.lewagon.com/" target="blank">www.lewagon.com</a>
-    <a class="shout-item" href="https://github.com/lewagon" target="blank"><i class="fab fa-github"></i>  https://github.com/lewagon</a>
-    <a class="shout-item" href="https://www.linkedin.com/school/le-wagon/" target="blank"><i class="fab fa-linkedin"></i> https://www.linkedin.com/school/le-wagon</a>
-    <a class="shout-item" href="https://twitter.com/Lewagonparis" target="blank"><i class="fab fa-twitter"></i> @Lewagonparis</a>
-    <a class="shout-item" href="mailto:contact@lewagon.com" target="blank">email: contact@lewagon.com</a>
-  </div>
+<div class="shoutouts p-3">
+  <%# <h2>owe it all to</h2> %>
 
-  <div class="shout suzlePants p-3">
-    <h4 class="shout-item">Susannah C. Taylor</h4>
-    <br>
-    <div class="shout-item img002">
-      <%= image_tag 'grad_suze.png', width: '64px', height: '64px' %>
-    </div>
-    <p class="shout-item">
-      &ensp;It would be remiss of me not to mention my partner whose un-wavering support and confidence in my passions has allowed me to pursue and undertake this epic journey into the world of development.<br>
-      <br>Much Love xx
-    </p>
-  </div>
+  <div class="shout-card p-3">
+    <div class="shout-title">
+      <div class="row">
+        <div class="title-image">
+          <%= link_to 'https://www.lewagon.com/', target: 'blank' do %>
+            <%= image_tag 'https://avatars.githubusercontent.com/u/5470001?s=64&v=4' %>
+          <% end %>
+        </div>
 
-  <div class="shout creds p-3">
-    <h4 class="shout-item">Additional Credits</h4>
-      <ul class="shout-item">
-        <li>homepage title animation - <%= link_to 'https://github.com/mattboldt/typed.js', 'https://github.com/mattboldt/typed.js', target: 'blank' %></li>
-        <li>additional soundFX - <%= link_to 'https://www.zapsplat.com', 'https://www.zapsplat.com', target: 'blank' %></li>
+        <div class="title-name">
+          <h2>Le Wagon</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="title-tag mt-3">
+          <h6>"Coding School bringing Technical Skills to Creative People"</h6>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <%# <div class="shout-details">
+      <ul class="shout-details-links">
+        <li class=link-item>
+          <a href="https://www.lewagon.com/" target="blank">www.lewagon.com</a>
+        </li>
+        <li class="link-item">
+          <a class="shout-item" href="https://github.com/lewagon" target="blank"><i class="fab fa-github"></i>  https://github.com/lewagon</a>
+        </li>
+        <li class="link-item">
+          <a class="shout-item" href="https://www.linkedin.com/school/le-wagon/" target="blank"><i class="fab fa-linkedin"></i> https://www.linkedin.com/school/le-wagon</a>
+        </li>
+        <li class="link-item">
+          <a class="shout-item" href="https://twitter.com/Lewagonparis" target="blank"><i class="fab fa-twitter"></i> @Lewagonparis</a>
+        </li>
+        <li class="link-item">
+          <a class="shout-item" href="mailto:contact@lewagon.com" target="blank">email: contact@lewagon.com</a>
+        </li>
       </ul>
+    </div> %>
+
   </div>
 
 </div>

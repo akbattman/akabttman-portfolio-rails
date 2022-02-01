@@ -15,6 +15,30 @@ $mini-com: 'Orbitron', sans-serif;
 $typewriter: 'Special Elite', cursive;
 $monst: 'Montserrat', sans-serif;
 
+body {
+  h1 {
+    font-size: MIN(10vw, 56px); // force CSS3 compile.
+  }
+  h2 {
+    font-size: MIN(7.5vw, 48px);
+  }
+  h3 {
+    font-size: MIN(6vw, 40px);
+  }
+  h4 {
+    font-size: MIN(5vw, 32px);
+  }
+  h5 {
+    font-size: MIN(4vw, 24px);
+  }
+  h6 {
+    font-size: MIN(3.25vw, 16px);
+  }
+  P {
+    font-size: MIN(3vw, 16px)
+  } 
+}
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

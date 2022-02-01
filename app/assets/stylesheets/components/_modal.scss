@@ -1,13 +1,8 @@
-.btnBat {
-  color: $bat-yel;
-  background: none;
-  border: 1px solid $bat-yel;
-  &:hover, &:focus {
-    color: $bat-yel;
-    background: none;
-    border: 1px solid $bat-yel;
-    box-shadow: 0 0 0 2px $bat-yel;
-    text-shadow: 0 0 2px $bat-yel;
+.entryMod {
+  display: flex;
+  justify-content: center;
+  .btnBat {
+    transform: translate(0, 40vh);
   }
 }
 
@@ -15,6 +10,7 @@
   position: relative;
   top: 12%;
 }
+
 .m-cBat {
   background: none;
 }
