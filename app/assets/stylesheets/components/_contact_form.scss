@@ -1,14 +1,13 @@
+.contactForm-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72vh;
+}
 .contactForm {
-  position: absolute;
-  top: 12vh;
-  width: 72%;
   z-index: 1;
   border: 1px solid;
   border-radius: 8px;
-
-  .contactForm-item {
-
-  }
   
   h3 {
     text-align: center;
@@ -19,13 +18,17 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  max-height:66vh;
+  overflow-y: auto;
   
   .contact-form-text-area {
-    width: 72%;
+    min-width: 66%;
   }
   
   .contact-form-text-area-message {
     width: 100%;
     height: 16vh;
+    max-height: 30vh;
   }
 }
