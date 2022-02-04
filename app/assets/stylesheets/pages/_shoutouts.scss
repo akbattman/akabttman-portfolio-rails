@@ -1,5 +1,11 @@
+.shoutouts {
+  display: flex;
+  // flex-direction: column;
+}
+
 .shout-card {
   border: 1px solid;
+  max-width: fit-content;
 }
 
 .shout-title .row {
