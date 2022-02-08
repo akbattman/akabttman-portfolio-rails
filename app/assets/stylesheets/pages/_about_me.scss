@@ -4,12 +4,8 @@
   flex-direction: column;
   position: relative;
   gap: 8px;
-  top: -10%;
+  width:100%;
 
-  border: 1px solid;
-  border-radius: 8px;
-  width: 90%;
-  height: 80%;
 }
 
 .aboutMe-item {
@@ -17,6 +13,7 @@
 }
 
 .aboutMe-Head {
+  width: 100%;
 
 }
 

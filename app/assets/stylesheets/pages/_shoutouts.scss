@@ -4,8 +4,9 @@
 }
 
 .shout-card {
-  border: 1px solid;
-  max-width: fit-content;
+  border: $primBord;
+  border-radius: $primBord-Rad;
+  // max-width: fit-content;
 }
 
 .shout-title .row {
@@ -13,8 +14,12 @@
   gap: 8px;
   align-items: center;
   h4 {
-    margin: 0
+    margin: 0;
   }
+}
+
+.lw001 {
+  border-radius: $primBord-Rad;
 }
 
 ul.shout-details-links {
