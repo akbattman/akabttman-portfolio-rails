@@ -1,0 +1,10 @@
+.projects {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  #comingSoon {
+    position: relative;
+    transform: translate(0, 30vh);
+  }
+}
