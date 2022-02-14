@@ -55,11 +55,13 @@ footer {
   width: 100vw;
   height: 5vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-evenly;
   position: absolute;
   bottom: 0;
   h6 {
     margin: 0;
+    position: relative;
+    bottom: 6px;
   }
 }
