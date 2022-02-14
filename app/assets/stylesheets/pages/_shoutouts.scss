@@ -22,6 +22,9 @@
     margin: 0;
   }
 }
+.title-image img {
+  border-radius: $primBord-Rad;
+}
 
 .link-item {
   display: flex;
