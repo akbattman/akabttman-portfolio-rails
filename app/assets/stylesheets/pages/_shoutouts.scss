@@ -1,19 +1,23 @@
 .shoutouts {
   display: flex;
   gap: 8px;
-  // flex-direction: column;
+  flex-direction: column;
+  // justify-content: center;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 .shout-card {
   border: $primBord;
   border-radius: $primBord-Rad;
-  // max-width: fit-content;
+  max-width: 98%;
 }
 
 .shout-title .row {
   margin: 0;
   gap: 8px;
   align-items: center;
+  flex-wrap: nowrap;
   h4 {
     margin: 0;
   }
