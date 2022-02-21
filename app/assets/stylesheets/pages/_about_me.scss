@@ -1,57 +1,57 @@
 .aboutMe {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  position: relative;
-  gap: 8px;
-  width:100%;
+  // align-items: flex-start;
+  // flex-direction: column;
+  // position: relative;
+  // gap: 8px;
+  // width:100%;
 
 }
 
-.aboutMe-item {
-  border: 1px solid red;
-}
+// .aboutMe-item {
+//   border: 1px solid red;
+// }
 
-.aboutMe-Head {
-  width: 100%;
+// .aboutMe-Head {
+//   width: 100%;
 
-}
+// }
 
-.aboutMe-Biog {
+// .aboutMe-Biog {
 
-}
+// }
 
-.aboutMe-Goals {
+// .aboutMe-Goals {
 
-}
+// }
 
-.aboutMe-Pic {
-  border-radius: 8%;
-  border: 1px solid;
-  position: absolute;
-  z-index: 2;
-}
+// .aboutMe-Pic {
+//   border-radius: 8%;
+//   border: 1px solid;
+//   position: absolute;
+//   z-index: 2;
+// }
 
-.pic001 {
-  // width: auto;
-  // height: 200px;
-  transform: rotate(16deg);
-  top: 0;
-  right: -2%;
-}
+// .pic001 {
+//   // width: auto;
+//   // height: 200px;
+//   transform: rotate(16deg);
+//   top: 0;
+//   right: -2%;
+// }
 
-.pic002 {
-  width: 320px;
-  height: auto;
-  transform: rotate(-8deg);
-  bottom: -2%;
-  right: 12%;
-}
+// .pic002 {
+//   width: 320px;
+//   height: auto;
+//   transform: rotate(-8deg);
+//   bottom: -2%;
+//   right: 12%;
+// }
 
-.pic003 {
-  width: auto;
-  height: 200px;
-  transform: rotate(-16deg);
-  top: 28%;
-  left: -2%;
-}
+// .pic003 {
+//   width: auto;
+//   height: 200px;
+//   transform: rotate(-16deg);
+//   top: 28%;
+//   left: -2%;
+// }
