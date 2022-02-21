@@ -7,10 +7,47 @@
   // width:100%;
 
 }
+.aboutMe-item-container {
+    height: auto;
+    width: 98%;
+    // display: grid;
 
-// .aboutMe-item {
-//   border: 1px solid red;
+    border: 1px solid red;
+}
+
+// @media(max-width: 600px) {
+//   .aboutMe-item-container {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-gap: 8px;
+//     height: auto;
+//     width: 98%;
+//     border: 1px solid red;
+//   }
 // }
+// @media(min-width: 601px) {
+//   .aboutMe-item-container {
+//     grid-template-columns: 1fr 1fr;
+//     height: auto;
+//     width: 98%;
+//     border: 1px solid red;
+//   }
+// }
+
+.aboutMe-item{
+  height: auto;
+  min-height: 100px;
+  width: auto;
+
+}
+.aboutMe-item.text-wrap {
+
+  border: 1px solid green;
+}
+.aboutMe-item.pic-wrap {
+
+  border: 1px solid pink;
+}
 
 // .aboutMe-Head {
 //   width: 100%;
