@@ -66,30 +66,55 @@
 .aboutMe-Pic {
   border-radius: $primBord-Rad;
   border: $primBord;
-  // position: absolute;
+  position: relative;
   // z-index: 2;
 }
 
-// .pic001 {
+.pic001 {
 //   // width: auto;
 //   // height: 200px;
-//   transform: rotate(16deg);
+  transform: rotate(8deg);
+  margin-left: 16px;
 //   top: 0;
 //   right: -2%;
-// }
+}
 
-// .pic002 {
+.pic002 {
 //   width: 320px;
 //   height: auto;
-//   transform: rotate(-8deg);
-//   bottom: -2%;
+  transform: rotate(8deg);
+  margin-left: 16px;
+  top: 6px;
 //   right: 12%;
-// }
+}
 
-// .pic003 {
+.pic003 {
 //   width: auto;
 //   height: 200px;
-//   transform: rotate(-16deg);
+  transform: rotate(-8deg);
+  margin-right: 16px;
 //   top: 28%;
 //   left: -2%;
-// }
+}
+
+.aboutMe-Block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  max-width: 98%;
+}
+
+@media(max-width: 600px) {
+  .aboutMe-Block {
+    flex-direction: column;
+  }
+  .bg-block {
+    flex-direction: column-reverse;
+  }
+  .aboutMe-Pic {
+    transform: rotate(0);
+    top: 0;
+    margin: 0;
+  }
+
+}
