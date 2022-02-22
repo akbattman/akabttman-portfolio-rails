@@ -1,100 +1,28 @@
 .aboutMe {
-  // display: flex;
-  // align-items: flex-start;
-  // flex-direction: column;
-  // position: relative;
-  // gap: 8px;
-  // width:100%;
   max-height: 80vh;
   overflow-y: scroll;
 }
-// .aboutMe-item-container {
-//     height: auto;
-//     width: 98%;
-//     // display: grid;
-
-//     border: 1px solid red;
-// }
-
-// @media(max-width: 600px) {
-//   .aboutMe-item-container {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-gap: 8px;
-//     height: auto;
-//     width: 98%;
-//     border: 1px solid red;
-//   }
-// }
-// @media(min-width: 601px) {
-//   .aboutMe-item-container {
-//     grid-template-columns: 1fr 1fr;
-//     height: auto;
-//     width: 98%;
-//     border: 1px solid red;
-//   }
-// }
-
-// .aboutMe-item{
-//   height: auto;
-//   min-height: 100px;
-//   width: auto;
-
-// }
-// .aboutMe-item.text-wrap {
-
-//   border: 1px solid green;
-// }
-// .aboutMe-item.pic-wrap {
-
-//   border: 1px solid pink;
-// }
-
-// .aboutMe-Head {
-//   width: 100%;
-
-// }
-
-// .aboutMe-Biog {
-
-// }
-
-// .aboutMe-Goals {
-
-// }
 
 .aboutMe-Pic {
   border-radius: $primBord-Rad;
   border: $primBord;
   position: relative;
-  // z-index: 2;
 }
 
 .pic001 {
-//   // width: auto;
-//   // height: 200px;
   transform: rotate(8deg);
   margin-left: 16px;
-//   top: 0;
-//   right: -2%;
 }
 
 .pic002 {
-//   width: 320px;
-//   height: auto;
   transform: rotate(8deg);
   margin-left: 16px;
   top: 6px;
-//   right: 12%;
 }
 
 .pic003 {
-//   width: auto;
-//   height: 200px;
   transform: rotate(-8deg);
-  margin-right: 16px;
-//   top: 28%;
-//   left: -2%;
+  margin-right: 24px;
 }
 
 .aboutMe-Block {
@@ -103,6 +31,20 @@
   margin-bottom: 16px;
   max-width: 98%;
 }
+
+// @media(max-width: 768px) {
+//   // .bio-block {
+//   //   flex-direction: column;
+//   // }
+//   // .bio-block .aboutMe-Block-Picwrap {
+//   //   float: right;
+//   // }
+//   // .pic002{
+//   //   transform: rotate(0);
+//   //   top: 0;
+//   //   margin: 0;
+//   // }
+// }
 
 @media(max-width: 600px) {
   .aboutMe-Block {
@@ -116,5 +58,4 @@
     top: 0;
     margin: 0;
   }
-
 }
