@@ -3,59 +3,113 @@
   overflow-y: scroll;
 }
 
+// .aboutMe-Pic {
+//   border-radius: $primBord-Rad;
+//   border: $primBord;
+//   position: relative;
+// }
+
+// .pic001 {
+//   transform: rotate(8deg);
+//   margin-left: 16px;
+// }
+
+// .pic002 {
+//   transform: rotate(8deg);
+//   margin-left: 16px;
+//   top: 6px;
+// }
+
+// .pic003 {
+//   transform: rotate(-8deg);
+//   margin-right: 24px;
+// }
+
+// .aboutMe-Block {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 16px;
+//   max-width: 98%;
+// }
+
+// // @media(max-width: 768px) {
+// //   // .bio-block {
+// //   //   flex-direction: column;
+// //   // }
+// //   // .bio-block .aboutMe-Block-Picwrap {
+// //   //   float: right;
+// //   // }
+// //   // .pic002{
+// //   //   transform: rotate(0);
+// //   //   top: 0;
+// //   //   margin: 0;
+// //   // }
+// // }
+
+// @media(max-width: 600px) {
+//   .aboutMe-Block {
+//     flex-direction: column;
+//   }
+//   .bg-block {
+//     flex-direction: column-reverse;
+//   }
+//   .aboutMe-Pic {
+//     transform: rotate(0);
+//     top: 0;
+//     margin: 0;
+//   }
+// }
+// #############################################
+// #############################################
+
+.aboutMe-section {
+  // border: 1px solid green;
+  overflow: hidden;
+  padding: 24px;
+}
+
 .aboutMe-Pic {
-  border-radius: $primBord-Rad;
   border: $primBord;
-  position: relative;
+  border-radius: $primBord-Rad;
+  margin-bottom: 12px;
+}
+
+.pic002, .pic003 {
+  float: right;
+  transform: rotate(8deg);
+  margin-left: 16px;
 }
 
 .pic001 {
-  transform: rotate(8deg);
-  margin-left: 16px;
-}
-
-.pic002 {
-  transform: rotate(8deg);
-  margin-left: 16px;
-  top: 6px;
-}
-
-.pic003 {
+  float: left;
   transform: rotate(-8deg);
-  margin-right: 24px;
-}
+  margin-right: 20px;
+};
 
-.aboutMe-Block {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  max-width: 98%;
-}
-
-// @media(max-width: 768px) {
-//   // .bio-block {
-//   //   flex-direction: column;
-//   // }
-//   // .bio-block .aboutMe-Block-Picwrap {
-//   //   float: right;
-//   // }
-//   // .pic002{
-//   //   transform: rotate(0);
-//   //   top: 0;
-//   //   margin: 0;
-//   // }
-// }
-
-@media(max-width: 600px) {
-  .aboutMe-Block {
+@media(max-width: 660px) {
+  .biog-section {
+    display: flex;
     flex-direction: column;
   }
-  .bg-block {
-    flex-direction: column-reverse;
+  .pic002 {
+    float: none;
+    transform: none;
+    margin: 0;
+    order: 1;
+    align-self: center;
+  }
+}
+
+@media(max-width: 599px) {
+  .aboutMe-section {
+    display: flex;
+    flex-direction: column;
   }
   .aboutMe-Pic {
-    transform: rotate(0);
-    top: 0;
+    float: none;
+    transform: none;
     margin: 0;
+    order: 1;
+    align-self: center;
   }
 }
