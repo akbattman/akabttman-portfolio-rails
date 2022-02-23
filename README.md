@@ -4,6 +4,10 @@
 application up and running. -->
 
   This app is intended to be a static hosted web[page/site] to showcase a range of information, data, and dev skills to support and evidence my continued development in the field of web application development || software engineering.
+  
+  AND**
+  
+  Has become a focal point for my self teaching html/frontend upskilling.
 
 <!-- Things you may want to cover: -->
 
