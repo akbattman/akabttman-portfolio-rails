@@ -14,9 +14,9 @@
 @import "pages/index";
 
 body {
+  height: 100vh;
   margin: 0;
   color: $bat-yel;
-  background: rgb(0,0,0);
   background: linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(0,0,21,1) 36%, rgba(0,0,48,1) 100%);
   a {
     color: inherit;
@@ -29,7 +29,8 @@ body {
 }
 
 .yieldContent {
-  height: 88vh;
+  display: flex;
+  justify-content: center;
 }
 
 .dimmer {
