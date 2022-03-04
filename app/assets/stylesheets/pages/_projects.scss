@@ -1,10 +1,7 @@
 .projects {
   width: 100vw;
+  height: 80vh;
   display: flex;
   justify-content: center;
-
-  #comingSoon {
-    position: relative;
-    transform: translate(0, 30vh);
-  }
+  align-items: center;
 }
