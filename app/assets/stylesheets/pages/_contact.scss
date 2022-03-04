@@ -16,16 +16,16 @@
   h3.title {
     text-align: center;
   }
-  h4.mail-me {
-    text-align: center;
-    font-size: MIN(4.5vw, 32px);
-    
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   h5 {
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  h5.mail-me {
+    text-align: center;
+    // font-size: MIN(4vmin, 32px);
+    
+    // overflow: hidden;
+    // text-overflow: ellipsis;
   }
 }
 

@@ -1,7 +1,7 @@
 header {
   height: 8vmax;
   width: auto;
-  padding: 16px;
+  padding: 0 16px;
   display: flex;
   align-items:center;
   justify-content: space-between;
@@ -17,6 +17,7 @@ header {
 
 .dropdown-menu.show {
   background: none;
+  border: none;
 }
 
 .dropdown-item {
